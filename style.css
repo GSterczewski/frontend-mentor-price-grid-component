@@ -28,12 +28,13 @@ body {
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   background-color: var(--light-gray-color);
-  min-height: 100vh;
   padding: 24px 12px;
+  min-height: 100vh;
 }
 
 .wrapper {
   width: 100%;
+  min-height: 100vh;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -116,10 +117,8 @@ body {
   border-bottom-left-radius: var(--component-border-radius);
   border-bottom-right-radius: var(--component-border-radius);
 }
+
 @media (min-width: 700px) {
-  body {
-    height: 100vh;
-  }
   .bottom-sections {
     display: flex;
   }
@@ -135,5 +134,10 @@ body {
   }
   .section {
     padding: 24px 32px;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    padding: 0;
   }
 }
