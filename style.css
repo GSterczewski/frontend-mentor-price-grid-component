@@ -19,12 +19,17 @@
   --button-shadow: 0 0 13px rgba(33, 33, 33, 0.2);
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
 body {
   font-family: var(--karla-font-family);
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   background-color: var(--light-gray-color);
   height: 100vh;
+  padding: 12px;
 }
 
 .wrapper {
