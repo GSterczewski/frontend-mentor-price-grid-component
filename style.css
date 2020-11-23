@@ -28,8 +28,8 @@ body {
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   background-color: var(--light-gray-color);
-  height: 100vh;
-  padding: 12px;
+  min-height: 100vh;
+  padding: 24px 12px;
 }
 
 .wrapper {
@@ -117,6 +117,9 @@ body {
   border-bottom-right-radius: var(--component-border-radius);
 }
 @media (min-width: 700px) {
+  body {
+    height: 100vh;
+  }
   .bottom-sections {
     display: flex;
   }
